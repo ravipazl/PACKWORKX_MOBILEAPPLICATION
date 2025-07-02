@@ -1,0 +1,70 @@
+name: packwork
+description: A mobile application for Packworks inventory management system
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI Components
+  cupertino_icons: 
+  
+  # HTTP requests
+  http: 
+  
+  # State management
+  provider: 
+  
+  # Local storage
+  shared_preferences: 
+
+  # Toast 
+
+  fluttertoast:
+  
+  
+  # Icons
+  font_awesome_flutter: 
+  
+  # Charts for reports
+  fl_chart: 
+  
+  # Date formatting
+  intl: 
+  
+  # Image handling
+  image_picker: 
+  
+  # File handling
+  path_provider: 
+
+  google_fonts:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # Assets
+  assets:
+    - assets/images/
+    - assets/icons/
+  
+  # Fonts
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
