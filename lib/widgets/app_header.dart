@@ -37,69 +37,69 @@ class AppHeader extends StatelessWidget implements PreferredSizeWidget {
         ],
       ),
       actions: actions ?? [
-        IconButton(
-          icon: const Icon(Icons.notifications),
-          onPressed: () {
-            // Handle notifications
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(
-                  'No new notifications',
-                  style: AppStyles.bodyMedium.copyWith(
-                    color: AppColors.textOnPrimary,
-                  ),
-                ),
-                duration: Duration(seconds: 2),
-                backgroundColor: AppColors.textPrimary,
-              ),
-            );
-          },
-        ),
-        PopupMenuButton<String>(
-          icon: const Icon(Icons.account_circle),
-          onSelected: (value) {
-            switch (value) {
-              case 'profile':
-                // Handle profile
-                break;
-              case 'logout':
-                Navigator.pushReplacementNamed(context, '/login');
-                break;
-            }
-          },
-          itemBuilder: (BuildContext context) => [
-            PopupMenuItem<String>(
-              value: 'profile',
-              child: Row(
-                children: [
-                  Icon(Icons.person, color: AppColors.textSecondary),
-                  SizedBox(width: AppStyles.spacing8),
-                  Text(
-                    'Profile',
-                    style: AppStyles.bodyMedium.copyWith(
-                      color: AppColors.textPrimary,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            PopupMenuItem<String>(
-              value: 'logout',
-              child: Row(
-                children: [
-                  Icon(Icons.logout, color: AppColors.textSecondary),
-                  SizedBox(width: AppStyles.spacing8),
-                  Text(
-                    'Logout',
-                    style: AppStyles.bodyMedium.copyWith(
-                      color: AppColors.textPrimary,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
+        // IconButton(
+        //   icon: const Icon(Icons.notifications),
+        //   onPressed: () {
+        //     // Handle notifications
+        //     ScaffoldMessenger.of(context).showSnackBar(
+        //       SnackBar(
+        //         content: Text(
+        //           'No new notifications',
+        //           style: AppStyles.bodyMedium.copyWith(
+        //             color: AppColors.textOnPrimary,
+        //           ),
+        //         ),
+        //         duration: Duration(seconds: 2),
+        //         backgroundColor: AppColors.textPrimary,
+        //       ),
+        //     );
+        //   },
+        // ),
+        // PopupMenuButton<String>(
+        //   icon: const Icon(Icons.account_circle),
+        //   onSelected: (value) {
+        //     switch (value) {
+        //       case 'profile':
+        //         // Handle profile
+        //         break;
+        //       case 'logout':
+        //         Navigator.pushReplacementNamed(context, '/login');
+        //         break;
+        //     }
+        //   },
+        //   itemBuilder: (BuildContext context) => [
+        //     PopupMenuItem<String>(
+        //       value: 'profile',
+        //       child: Row(
+        //         children: [
+        //           Icon(Icons.person, color: AppColors.textSecondary),
+        //           SizedBox(width: AppStyles.spacing8),
+        //           Text(
+        //             'Profile',
+        //             style: AppStyles.bodyMedium.copyWith(
+        //               color: AppColors.textPrimary,
+        //             ),
+        //           ),
+        //         ],
+        //       ),
+        //     ),
+        //     PopupMenuItem<String>(
+        //       value: 'logout',
+        //       child: Row(
+        //         children: [
+        //           Icon(Icons.logout, color: AppColors.textSecondary),
+        //           SizedBox(width: AppStyles.spacing8),
+        //           Text(
+        //             'Logout',
+        //             style: AppStyles.bodyMedium.copyWith(
+        //               color: AppColors.textPrimary,
+        //             ),
+        //           ),
+        //         ],
+        //       ),
+        //     ),
+        //   ],
+        // ),
       ],
     );
   }

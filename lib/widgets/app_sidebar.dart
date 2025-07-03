@@ -111,35 +111,13 @@ class _AppSidebarState extends State<AppSidebar> {
                   isSelected: widget.currentPage == 'Work Order',
                 ),
                 
-                _buildMenuItem(
-                  icon: Icons.inventory,
-                  title: 'Inventory',
-                  isSelected: widget.currentPage == 'Inventory',
-                ),
                 
-                _buildMenuItem(
-                  icon: Icons.category,
-                  title: 'Products',
-                  isSelected: widget.currentPage == 'Products',
-                ),
                 
-                _buildMenuItem(
-                  icon: Icons.bar_chart,
-                  title: 'Reports',
-                  isSelected: widget.currentPage == 'Reports',
-                ),
-                
-                const Divider(),
-                
-                _buildMenuItem(
-                  icon: Icons.settings,
-                  title: 'Settings',
-                  isSelected: widget.currentPage == 'Settings',
-                ),
+              
               ],
             ),
           ),
-          
+       
           // Footer
           Container(
             padding: EdgeInsets.symmetric(

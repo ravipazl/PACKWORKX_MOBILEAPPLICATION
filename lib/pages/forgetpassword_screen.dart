@@ -41,7 +41,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         // Make API call
         final response = await http.post(
           url,
-          headers: ApiService.headers,
+          headers: ApiService.loginheaders,
           body: body,
         );
 
